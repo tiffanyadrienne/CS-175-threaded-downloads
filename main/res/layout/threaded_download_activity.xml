@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter URL:"
+        />
+
+    <EditText
+        android:id="@+id/url"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <Button
+        android:id="@+id/runRunnableBtn"
+        android:layout_width="98dp"
+        android:layout_height="wrap_content"
+        android:onClick="runRunnable"
+        android:text="Run Runnable" />
+
+    <Button
+        android:id="@+id/runMessaagesBtn"
+        android:layout_width="101dp"
+        android:layout_height="wrap_content"
+        android:onClick="runMessage"
+        android:text="Run Messages" />
+
+    <Button
+        android:id="@+id/runAsyncBtn"
+        android:layout_width="94dp"
+        android:layout_height="wrap_content"
+        android:onClick="runAsyncTask"
+        android:text="Run Async" />
+
+    <Button
+        android:id="@+id/resetImageBtn"
+        android:layout_width="104dp"
+        android:layout_height="wrap_content"
+        android:onClick="resetImage"
+        android:text="Reset Image" />
+</LinearLayout>
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/defaultphoto"
+    />
+</LinearLayout>
